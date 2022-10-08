@@ -1,2 +1,2 @@
 # conversor-de-medidas
-Aplicativo para conversão de medidas
+Aplicativo para conversão de medidas. Km para m, m para km, km para mi, mi para km, cm para m...
