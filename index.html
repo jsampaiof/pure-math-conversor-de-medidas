@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="Scripts/Script.js" defer></script>
+    <title>PureMath - Conversor de Medidas</title>
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="Images/logo.png" alt="PureMath">
+                </div>
+            </div>            
+        </section>
+    </header>
+    <main>
+        <section class="section-1-container">
+            <div class="bloco-metro-para-km">
+                <div class="titulo">
+                    <h1>M para Km</h1>
+                </div>
+                <div class="entrada-de-valores">
+                    <form class="valor-em-metros">
+                        <label for="valores-metros">Quanto você que calcular?</label>
+                        <input type="text" name="metros" id="valores-metros" placeholder="metros">
+                    </form>
+                </div>
+                <div class="botão-calcular">
+                    <input type="button" value="calcular" onclick="metroparakm()">
+                </div>
+                <div class="calculo">
+                    <div class="texto-explicativo">
+                        <p><span id="valor-em-metros">0</span> metros é igual a:</p>
+                    </div>
+                    <div class="resultado">
+                        <p><span id="valor-em-quilometros">0</span> Km</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="section-2-container">
+            <section class="outros-calculos">
+                <div class="bloco-km-para-metros">
+                    <div class="titulo">
+                        <h1>Km para m</h1>
+                    </div>
+                    <div class="entrada-de-valores">
+                        <form class="valor-em-quilometros-2">
+                            <label for="valores-quilometros">Quanto você que calcular?</label>
+                            <input type="text" name="metros" id="valores-quilometros" placeholder="quilometros">
+                        </form>
+                    </div>
+                    <div class="botão-calcular">
+                        <input type="button" value="calcular" onclick="kmparametros()">
+                    </div>
+                    <div class="calculo">
+                        <div class="texto-explicativo">
+                            <p><span id="valor-em-quilometros-2">0</span> quilometros é igual a:</p>
+                        </div>
+                        <div class="resultado">
+                            <p><span id="valor-em-metros-2">0</span> m</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco-cm-para-metros">
+                    <div class="titulo">
+                        <h1>Cm para m</h1>
+                    </div>
+                    <div class="entrada-de-valores">
+                        <form class="valor-em-cm">
+                            <label for="valores-centimetros">Quanto você que calcular?</label>
+                            <input type="text" name="metros" id="valores-centimetros" placeholder="centimetros">
+                        </form>
+                    </div>
+                    <div class="botão-calcular">
+                        <input type="button" value="calcular" onclick="cmparametros()">
+                    </div>
+                    <div class="calculo">
+                        <div class="texto-explicativo">
+                            <p><span id="valor-em-cm">0</span> centimetros é igual a:</p>
+                        </div>
+                        <div class="resultado">
+                            <p><span id="valor-em-metros-3">0</span> m</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco-m-para-centimetro">
+                    <div class="titulo">
+                        <h1>M para cm</h1>
+                    </div>
+                    <div class="entrada-de-valores">
+                        <form class="valor-em-m">
+                            <label for="valores-metros-2">Quanto você que calcular?</label>
+                            <input type="text" name="metros" id="valores-metros-2" placeholder="metros">
+                        </form>
+                    </div>
+                    <div class="botão-calcular">
+                        <input type="button" value="calcular" onclick="mparacm()">
+                    </div>
+                    <div class="calculo">
+                        <div class="texto-explicativo">
+                            <p><span id="valor-em-metros-4">0</span> centimetros é igual a:</p>
+                        </div>
+                        <div class="resultado">
+                            <p><span id="valor-em-centimetro">0</span> Cm</p>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+        </section>
+    </main>    
+</body>
+</html>
