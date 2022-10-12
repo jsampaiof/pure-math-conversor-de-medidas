@@ -1,1 +1,105 @@
-@import url("https://fonts.googleapis.com/css?family=Krona+One");
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+section.logo-container{
+    background-color: whitesmoke;
+    border-bottom: solid 1px silver;
+}
+
+img.logo{
+    width: 120px;
+    display: flex;
+    margin: auto;
+}
+
+section.section-1-container{
+    background-image: url('../Images/01.webp');
+    height: 768px;
+    display: flex;
+    align-items: center;
+}
+
+div.bloco-principal{
+    border: solid 1px;
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    /*efeito*/
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+;
+
+}
+
+div.bloco-metro-para-km{
+    margin: auto;
+}
+
+div.titulo{
+    font-size: 40px;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 15px;
+}
+
+form.entrada-de-valores{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+form.entrada-de-valores input{
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 22px;
+    text-align: center;  
+}
+
+div.botão-calcular input{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: #D4B39E;
+    font-size: 22px;
+}
+
+div.calculo{
+    margin-top: 15px;
+}
+
+div.texto-explicativo p{
+    font-size: 25px;
+}
+
+div.resultado{
+    border: 2px solid;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #D4B39E;
+    display: flex;
+    align-items: center;
+}
+
+div.resultado p{
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+}

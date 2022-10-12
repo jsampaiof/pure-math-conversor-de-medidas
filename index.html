@@ -11,34 +11,35 @@
 <body>
     <header>
         <section class="logo-container">
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="Images/logo.png" alt="PureMath">
-                </div>
+            <div class="logo-image">
+                <img class="logo" src="Images/logo.png" alt="PureMath">                
             </div>            
         </section>
     </header>
     <main>
         <section class="section-1-container">
-            <div class="bloco-metro-para-km">
-                <div class="titulo">
-                    <h1>M para Km</h1>
-                </div>
-                <div class="entrada-de-valores">
-                    <form class="valor-em-metros">
-                        <label for="valores-metros">Quanto você que calcular?</label>
-                        <input type="text" name="metros" id="valores-metros" placeholder="metros">
-                    </form>
-                </div>
-                <div class="botão-calcular">
-                    <input type="button" value="calcular" onclick="metroparakm()">
-                </div>
-                <div class="calculo">
-                    <div class="texto-explicativo">
-                        <p><span id="valor-em-metros">0</span> metros é igual a:</p>
+            <div class="bloco-principal">
+                <div class="bloco-metro-para-km">
+                    <div class="titulo">
+                        <h1>M para km</h1>
                     </div>
-                    <div class="resultado">
-                        <p><span id="valor-em-quilometros">0</span> Km</p>
+                    <hr>
+                    <div class="formulario">
+                        <form class="entrada-de-valores">
+                            <label for="valores-metros">Quanto você quer calcular?</label>
+                            <input type="text" name="metros" id="valores-metros" placeholder="metros">
+                        </form>
+                    </div>
+                    <div class="botão-calcular">
+                        <input type="button" value="Calcular" onclick="metroparakm()">
+                    </div>
+                    <div class="calculo">
+                        <div class="texto-explicativo">
+                            <p><span id="valor-em-metros">0</span> metros é igual a:</p>
+                        </div>
+                        <div class="resultado">
+                            <p><span id="valor-em-quilometros">0</span> Km</p>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -49,9 +50,9 @@
                     <div class="titulo">
                         <h1>Km para m</h1>
                     </div>
-                    <div class="entrada-de-valores">
-                        <form class="valor-em-quilometros-2">
-                            <label for="valores-quilometros">Quanto você que calcular?</label>
+                    <div class="formulario">
+                        <form class="entrada-de-valores">
+                            <label for="valores-quilometros">Quanto você quer calcular?</label>
                             <input type="text" name="metros" id="valores-quilometros" placeholder="quilometros">
                         </form>
                     </div>
@@ -71,9 +72,9 @@
                     <div class="titulo">
                         <h1>Cm para m</h1>
                     </div>
-                    <div class="entrada-de-valores">
-                        <form class="valor-em-cm">
-                            <label for="valores-centimetros">Quanto você que calcular?</label>
+                    <div class="formulario">
+                        <form class="entrada-de-valores">
+                            <label for="valores-centimetros">Quanto você quer calcular?</label>
                             <input type="text" name="metros" id="valores-centimetros" placeholder="centimetros">
                         </form>
                     </div>
@@ -93,9 +94,9 @@
                     <div class="titulo">
                         <h1>M para cm</h1>
                     </div>
-                    <div class="entrada-de-valores">
-                        <form class="valor-em-m">
-                            <label for="valores-metros-2">Quanto você que calcular?</label>
+                    <div class="formulario">
+                        <form class="entrada-de-valores">
+                            <label for="valores-metros-2">Quanto você quer calcular?</label>
                             <input type="text" name="metros" id="valores-metros-2" placeholder="metros">
                         </form>
                     </div>
@@ -104,7 +105,7 @@
                     </div>
                     <div class="calculo">
                         <div class="texto-explicativo">
-                            <p><span id="valor-em-metros-4">0</span> centimetros é igual a:</p>
+                            <p><span id="valor-em-metros-4">0</span> metros é igual a:</p>
                         </div>
                         <div class="resultado">
                             <p><span id="valor-em-centimetro">0</span> Cm</p>
@@ -113,6 +114,7 @@
                 </div>
             </section>            
         </section>
+        <section></section>
     </main>    
 </body>
 </html>
