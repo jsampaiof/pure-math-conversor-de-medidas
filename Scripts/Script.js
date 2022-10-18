@@ -25,3 +25,12 @@ function mparacm(){
     document.querySelector('#valor-em-metros-4').textContent = metros;
     document.querySelector('#valor-em-centimetro').textContent = calculo;
 };
+
+function raiodacircunferencia(){
+}
+
+function diametrodacircunferencia(){
+}
+
+function comprimentodacircunferencia(){
+}
