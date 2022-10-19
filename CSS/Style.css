@@ -148,6 +148,7 @@
     div.calculos-recomendados{
         display: flex;
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     div.bloco-secundario{
@@ -204,6 +205,7 @@
     }
 
     div.social-networks{
+        width: 230px;
         width: 200px;
         display: flex;
         justify-content: space-between;
@@ -429,6 +431,7 @@
     }
 
     div.social-networks{
+        width: 260px;
         width: 220px;
         display: flex;
         justify-content: space-between;
@@ -654,6 +657,7 @@
     }
 
     div.social-networks{
+        width: 250px;
         width: 220px;
         display: flex;
         justify-content: space-between;
