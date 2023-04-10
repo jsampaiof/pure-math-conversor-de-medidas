@@ -28,18 +28,18 @@
                     <div class="formulario">
                         <form class="entrada-de-valores">
                             <label for="valores">Quanto você quer calcular?</label>
-                            <input class="valores <%= getType.division[0].value %>" type="text" name="metros" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
+                            <input class="valores" type="text" name="metros" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
                         </form>
                     </div>
                     <div class="botão-calcular">
-                        <input class="division" type="button" value="Calcular">
+                        <input class="division <%= getType.division[0].value %>" type="button" value="Calcular">
                     </div>
                     <div class="calculo">
                         <div class="texto-explicativo">
-                            <p><span id="valor-em-metros">0</span> metros é igual a:</p>
+                            <p><span class="valor-aplicado">0</span> metros é igual a:</p>
                         </div>
                         <div class="resultado">
-                            <p><span id="valor-em-quilometros">0</span> Km</p>
+                            <p><span class="valor-convertido">0</span> Km</p>
                         </div>
                     </div>
                 </div>
@@ -62,18 +62,18 @@
                             <div class="formulario">
                                 <form class="entrada-de-valores">
                                     <label for="valores">Quanto você quer calcular?</label>
-                                    <input type="text" name="metros" class="valores <%= getType.multiplication[i].value %>" placeholder="valor em <%= getType.multiplication[i].name.split(" ")[0] %>">
+                                    <input type="text" name="metros" class="valores" placeholder="valor em <%= getType.multiplication[i].name.split(" ")[0] %>">
                                 </form>
                             </div>
                             <div class="botão-calcular">
-                                <input class="multiplication" type="button" value="calcular">
+                                <input class="multiplication <%= getType.multiplication[i].value %>" type="button" value="calcular">
                             </div>
                             <div class="calculo">
                                 <div class="texto-explicativo">
-                                    <p><span id="valor-em-quilometros-2">0</span> <%= getType.multiplication[i].name.split(" ")[0] %> é igual a:</p>
+                                    <p><span class="valor-aplicado">0</span> <%= getType.multiplication[i].name.split(" ")[0] %> é igual a:</p>
                                 </div>
                                 <div class="resultado">
-                                    <p><span id="valor-em-metros-2">0</span> <%= getType.multiplication[i].name.split(" ")[2] %></p>
+                                    <p><span class="valor-convertido">0</span> <%= getType.multiplication[i].name.split(" ")[2] %></p>
                                 </div>
                             </div>
                         </div>

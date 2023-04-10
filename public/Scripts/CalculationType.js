@@ -17,7 +17,7 @@ const type = {
         {
             id: 3, 
             name: 'Mi para Km',
-            value: 1.609,
+            value: 1609,
             class: 'mile-to-kilometer',
         }
     ],
@@ -41,5 +41,4 @@ function getType(){
     return type;
 };
 
-// console.log(getType().division);
 export {getType};

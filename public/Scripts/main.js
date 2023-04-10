@@ -1,21 +1,26 @@
 'use strict';
 
 import {calculos} from './calculation.js';
-import * as Type from './CalculationType.js';
 
 const botaocalcular = document.querySelectorAll('.botão-calcular input');
-const input = document.querySelectorAll('.valores');
-const inputClass = input[0].className;
-const numb = parseInt(inputClass.replace(/\D/g, " "));
-console.log(numb);
 
 botaocalcular.forEach((element) => {
-    element.addEventListener('click', function(event){
+    element.addEventListener('click', function(){
+        const input = this.parentNode.parentNode.querySelector('.valores');
+        const valorAplicado = this.parentNode.parentNode.querySelector('.valor-aplicado');
+        const valorConvertido = this.parentNode.parentNode.querySelector('.valor-convertido');
         if(this.classList.contains('division')){
-            const clicked = event.target;
+            const inputClass = this.className;
+            const numb = parseInt(inputClass.replace(/\D/g, " "));
             const valor = parseFloat(input.value);
             const calculo = new calculos(valor, numb);
-            calculo.division();
-        } else if (this.classList.contains('multiplication')){}
+            calculo.division(valorAplicado, valorConvertido);
+        } else if (this.classList.contains('multiplication')){
+            const inputClass = this.className;
+            const numb = parseInt(inputClass.replace(/\D/g, " "));
+            const valor = parseFloat(input.value);
+            const calculo = new calculos(valor, numb);
+            calculo.multiplication(valorAplicado, valorConvertido);
+        }
     });
 });
