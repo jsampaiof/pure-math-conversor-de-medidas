@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="shortcut icon" href="Images/favicon.webp" type="image/x-icon">
+    <script type="module" src="Scripts/main.js" defer></script>
+    <title><%= title %></title>
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <div class="logo-image">
+                <img class="logo" src="Images/logo.webp" alt="PureMath" loading="lazy">
+            </div>            
+        </section>
+    </header>
+    <main>
+        <section class="section-1-container">
+            <div class="bloco-principal">
+                <div class="bloco-metro-para-km">
+                    <div class="titulo-bloco">
+                        <h1><%= getType.division[0].name %></h1>
+                    </div>
+                    <hr>
+                    <div class="formulario">
+                        <form class="entrada-de-valores">
+                            <label for="valores">Quanto você quer calcular?</label>
+                            <input class="valores <%= getType.division[0].value %>" type="text" name="metros" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
+                        </form>
+                    </div>
+                    <div class="botão-calcular">
+                        <input class="division" type="button" value="Calcular">
+                    </div>
+                    <div class="calculo">
+                        <div class="texto-explicativo">
+                            <p><span id="valor-em-metros">0</span> metros é igual a:</p>
+                        </div>
+                        <div class="resultado">
+                            <p><span id="valor-em-quilometros">0</span> Km</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="section-2-container">
+            <div class="titulo-section-2">
+                <div class="titulo">
+                    <h1>Você pode gostar:</h1>
+                </div>
+            </div>
+            <div class="calculos-recomendados">
+                <div class="bloco-secundario">
+                    <% for (let i=0; i < getType.multiplication.length; i++){ %>
+                        <div class="<%= getType.multiplication[i].class %>">
+                            <div class="titulo-bloco">
+                                <h1><%= getType.multiplication[i].name %></h1>
+                            </div>
+                            <hr>
+                            <div class="formulario">
+                                <form class="entrada-de-valores">
+                                    <label for="valores">Quanto você quer calcular?</label>
+                                    <input type="text" name="metros" class="valores <%= getType.multiplication[i].value %>" placeholder="valor em <%= getType.multiplication[i].name.split(" ")[0] %>">
+                                </form>
+                            </div>
+                            <div class="botão-calcular">
+                                <input class="multiplication" type="button" value="calcular">
+                            </div>
+                            <div class="calculo">
+                                <div class="texto-explicativo">
+                                    <p><span id="valor-em-quilometros-2">0</span> <%= getType.multiplication[i].name.split(" ")[0] %> é igual a:</p>
+                                </div>
+                                <div class="resultado">
+                                    <p><span id="valor-em-metros-2">0</span> <%= getType.multiplication[i].name.split(" ")[2] %></p>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>           
+        </section>
+    </main>
+    <footer>
+        <section class="rodape-container">
+            <div class="objects-container">
+                <div class="social-networks-container">
+                    <div class="call-me">
+                        <p>Fale comigo:</p>
+                    </div>
+                    <div class="social-networks">
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/j.sampaiof2/"><img src="Images/Instagram icon.webp" alt="Instagram"></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/josthersampaiofontes/"><img src="Images/facebook icon.webp" alt=""></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://twitter.com/j_sampaiof"><img src="images/twitter icon.webp" alt=""></a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/josther-sampaio/"><img src="images/LinkedIn icon.webp" alt=""></a>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/jsampaiof"><img src="images/github icon.webp" alt=""></a>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B5574999846773"><img src="images/WhatsApp icon.webp" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <div class="description">
+                        <p>Project developed by:</p>
+                    </div>
+                    <div class="assinatura">
+                        <p>Josther Sampaio Fontes</p>
+                    </div>
+                    <div class="copyright">
+                        <p>All Contents Copyright 2022 PureMath. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
