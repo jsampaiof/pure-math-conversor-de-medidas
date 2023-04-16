@@ -7,686 +7,237 @@
     margin: 0;
 }
 
+:root{
+    --first-color: #D4B39E;
+    --second-color: #c0c0c0;
+}
+
 ::selection{
-    background-color: #d4b39e;
+    background-color: var(--first-color);
 }
 
-@media (min-width: 800px){
-    /*HEADER*/
+/*HEADER*/
 
-    section.logo-container{
-        background-color: whitesmoke;
-        border-bottom: solid 1px silver;
-    }
-
-    img.logo{
-        width: 120px;
-        display: flex;
-        margin: auto;
-    }
-
-    /*MAIN - SECTION 1*/
-
-    section.section-1-container{
-        background-image: url('../Images/01.webp');
-        background-position: center;
-        height: 768px;
-        display: flex;
-        align-items: center;
-    }
-
-    div.bloco-principal{
-        border: solid 1px;
-        border-radius: 30px;
-        width: 500px;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur( 11px );
-        -webkit-backdrop-filter: blur( 13.5px );
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-metro-para-km{
-        margin: auto;
-    }
-
-    div.titulo-bloco{
-        font-size: 40px;
-        font-family: 'Krona One', sans-serif;
-        margin-bottom: 15px;
-    }
-
-    form.entrada-de-valores{
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-        font-size: 20px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    form.entrada-de-valores input{
-        border-radius: 25px;
-        width: 150px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-    }
-
-    form.entrada-de-valores input::-webkit-input-placeholder{
-        font-size: 15px;
-        text-align: center;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.botão-calcular input{
-        width: 100px;
-        height: 30px;
-        margin-top: 15px;
-        border-radius: 25px;
-        background-color: #D4B39E;
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-        cursor: pointer;
-    }
-
-    div.botão-calcular input:hover{
-        cursor: pointer;
-    }
-
-    div.calculo{
-        margin-top: 15px;
-    }
-
-    div.texto-explicativo p{
-        font-size: 20px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.resultado{
-        border: 2px solid;
-        border-radius: 25px;
-        width: 150px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-        background-color: #D4B39E;
-        display: flex;
-        align-items: center;
-    }
-
-    div.resultado p{
-        text-align: center;
-        margin: auto;
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    /*MAIN - SECTION 2*/
-
-    section.section-2-container{
-        margin: 20px;
-        text-align: center;
-    }
-
-    div.titulo-section-2{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    div.titulo h1{
-        font-size: 40px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.calculos-recomendados{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    div.bloco-secundario{
-        border-radius: 30px;
-        width: 400px;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: 10px;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-secundario .titulo-bloco{
-        font-size: 25px;
-    }
-
-    div.bloco-secundario .entrada-de-valores{
-        font-size: 18px;   
-    }
-
-    div.bloco-secundario .texto-explicativo p{
-        font-size: 18px;
-    }
-
-    div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
-        margin: auto;
-    }
-
-    /*FOOTER*/
-
-    div.objects-container{
-        background-color: whitesmoke;
-        border-top: solid 1px silver;
-        margin-top: 50px;
-        display: flex;
-        height: 100px;
-    }
-
-    div.social-networks-container{
-        border-right: 1px dashed silver;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-    }
-    div.call-me{
-        margin: auto;
-        margin-bottom: 0;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.social-networks{
-        width: 230px;
-        width: 200px;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-    }
-
-    div.social-networks img{
-        width: 30px;
-    }
-
-    div.description-container{
-        text-align: center;
-        margin: auto;
-    }
-
-    div.description{
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.assinatura{
-        font-family: 'WindSong', cursive;
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-
-    div.copyright{
-        font-family: 'Krona One', sans-serif;
-        font-size: 10px;
-        border-top: 1px solid;
-    }    
+section.logo-container{
+    background-color: whitesmoke;
+    border-bottom: solid 1px var(--second-color);
 }
 
-@media (min-width: 320px) and (max-width: 500px){
-    /*HEADER*/
-
-    section.logo-container{
-        background-color: whitesmoke;
-        border-bottom: solid 1px silver;
-    }
-
-    img.logo{
-        width: 120px;
-        display: flex;
-        margin: auto;
-    }
-
-    /*MAIN - SECTION 1*/
-
-    section.section-1-container{
-        background-image: url('../Images/02.webp');
-        background-position: center;
-        background-position-y: bottom;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        width: auto;
-    }
-
-    div.bloco-principal{
-        border: solid 1px;
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur( 11px );
-        -webkit-backdrop-filter: blur( 13.5px );
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-metro-para-km{
-        margin: auto;
-    }
-
-    div.titulo-bloco{
-        font-size: 20px;
-        font-family: 'Krona One', sans-serif;
-        margin-bottom: 15px;
-    }
-
-    form.entrada-de-valores{
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    form.entrada-de-valores input{
-        border-radius: 25px;
-        width: 130px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-    }
-
-    form.entrada-de-valores input::-webkit-input-placeholder{
-        font-size: 13px;
-        text-align: center;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.botão-calcular input{
-        width: 100px;
-        height: 30px;
-        margin-top: 15px;
-        border-radius: 25px;
-        background-color: #D4B39E;
-        font-size: 13px;
-        font-family: 'Krona One', sans-serif;
-        cursor: pointer;
-    }
-
-    div.calculo{
-        margin-top: 15px;
-    }
-
-    div.texto-explicativo p{
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.resultado{
-        border: 2px solid;
-        border-radius: 25px;
-        width: 130px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-        background-color: #D4B39E;
-        display: flex;
-        align-items: center;
-    }
-
-    div.resultado p{
-        text-align: center;
-        margin: auto;
-        font-size: 13px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    /*MAIN - SECTION 2*/
-
-    section.section-2-container{
-        margin: 20px;
-        text-align: center;
-    }
-
-    div.titulo-section-2{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    div.titulo h1{
-        font-size: 25px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.calculos-recomendados{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    div.bloco-secundario{
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 20px;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-secundario .titulo-bloco{
-        font-size: 15px;
-    }
-
-    div.bloco-secundario .entrada-de-valores{
-        font-size: 13px;   
-    }
-
-    div.bloco-secundario .texto-explicativo p{
-        font-size: 13px;
-    }
-
-    div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
-        margin: auto;
-    }
-
-    /*FOOTER*/
-
-    div.objects-container{
-        background-color: whitesmoke;
-        border-top: solid 1px silver;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    div.social-networks-container{
-        border-bottom: 2px dashed silver;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    div.call-me{
-        margin: auto;
-        margin-bottom: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.social-networks{
-        width: 260px;
-        width: 220px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    div.social-networks img{
-        width: 35px;
-    }
-
-    div.description-container{
-        text-align: center;
-        margin: auto;
-        padding: 10px;
-    }
-
-    div.description{
-        font-family: 'Krona One', sans-serif;
-        font-size: 15px;
-    }
-
-    div.assinatura{
-        font-family: 'WindSong', cursive;
-        font-size: 27px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-
-    div.copyright{
-        font-family: 'Krona One', sans-serif;
-        font-size: 13px;
-        border-top: 1px solid;
-    }  
+img.logo{
+    width: 120px;
+    display: flex;
+    margin: auto;
 }
 
-@media (min-width: 500px) and (max-width: 799px){
-    /*HEADER*/
+/*MAIN - SECTION 1*/
 
-    section.logo-container{
-        background-color: whitesmoke;
-        border-bottom: solid 1px silver;
-    }
-
-    img.logo{
-        width: 120px;
-        display: flex;
-        margin: auto;
-    }
-
-    /*MAIN - SECTION 1*/
-
-    section.section-1-container{
-        background-image: url('../Images/01.webp');
-        background-position: center;
-        background-position-y: bottom;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        width: auto;
-    }
-
-    div.bloco-principal{
-        border: solid 1px;
-        border-radius: 30px;
-        width: 400px;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur( 11px );
-        -webkit-backdrop-filter: blur( 13.5px );
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-metro-para-km{
-        margin: auto;
-    }
-
-    div.titulo-bloco{
-        font-size: 25px;
-        font-family: 'Krona One', sans-serif;
-        margin-bottom: 15px;
-    }
-
-    form.entrada-de-valores{
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-        font-size: 20px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    form.entrada-de-valores input{
-        border-radius: 25px;
-        width: 150px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-    }
-
-    form.entrada-de-valores input::-webkit-input-placeholder{
-        font-size: 15px;
-        text-align: center;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.botão-calcular input{
-        width: 100px;
-        height: 30px;
-        margin-top: 15px;
-        border-radius: 25px;
-        background-color: #D4B39E;
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-        cursor: pointer;
-    }
-
-    div.calculo{
-        margin-top: 15px;
-    }
-
-    div.texto-explicativo p{
-        font-size: 20px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.resultado{
-        border: 2px solid;
-        border-radius: 25px;
-        width: 130px;
-        height: 30px;
-        margin: auto;
-        margin-top: 15px;
-        background-color: #D4B39E;
-        display: flex;
-        align-items: center;
-    }
-
-    div.resultado p{
-        text-align: center;
-        margin: auto;
-        font-size: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    /*MAIN - SECTION 2*/
-
-    section.section-2-container{
-        margin: 20px;
-        text-align: center;
-    }
-
-    div.titulo-section-2{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    div.titulo h1{
-        font-size: 30px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.calculos-recomendados{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    div.bloco-secundario{
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 20px;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-secundario .titulo-bloco{
-        font-size: 20px;
-    }
-
-    div.bloco-secundario .entrada-de-valores{
-        font-size: 15px;   
-    }
-
-    div.bloco-secundario .texto-explicativo p{
-        font-size: 15px;
-    }
-
-    div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
-        margin: auto;
-    }
-
-    /*FOOTER*/
-
-    div.objects-container{
-        background-color: whitesmoke;
-        border-top: solid 1px silver;
-        margin-top: 50px;
-        display: flex;
-        
-    }
-
-    div.social-networks-container{
-        border-right: 1px dashed silver;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        padding: 10px;
-    }
-    div.call-me{
-        margin-bottom: 15px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.social-networks{
-        width: 250px;
-        width: 220px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    div.social-networks img{
-        width: 30px;
-    }
-
-    div.description-container{
-        text-align: center;
-        margin: auto;
-        padding: 10px;
-    }
-
-    div.description{
-        font-family: 'Krona One', sans-serif;
-        font-size: 15px;
-    }
-
-    div.assinatura{
-        font-family: 'WindSong', cursive;
-        font-size: 27px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-
-    div.copyright{
-        font-family: 'Krona One', sans-serif;
-        font-size: 13px;
-        border-top: 1px solid;
-    }  
+section.container-1{
+    background-image: url('../Images/01.webp');
+    background-position: center;
+    height: 768px;
+    display: flex;
+    align-items: center;
 }
+
+div.main-block{
+    border: solid 1px;
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    /*efeito*/
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* div.bloco-metro-para-km{
+    margin: auto;
+} */
+
+div.block-title{
+    font-size: 40px;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 15px;
+}
+
+div.value-entry form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+}
+
+div.value-entry form input{
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+div.value-entry form input::-webkit-input-placeholder{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+div.calculation-button input{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: #D4B39E;
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+    cursor: pointer;
+}
+
+div.calculation-button input:hover{
+    cursor: pointer;
+}
+
+div.calculation{
+    margin-top: 15px;
+}
+
+div.description p{
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+}
+
+div.result{
+    border: 2px solid;
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #D4B39E;
+    display: flex;
+    align-items: center;
+}
+
+div.result p{
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+}
+
+/*MAIN - SECTION 2*/
+
+section.section-2-container{
+    margin: 20px;
+    text-align: center;
+}
+
+div.titulo-section-2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.titulo h1{
+    font-size: 40px;
+    font-family: 'Krona One', sans-serif;
+}
+
+div.calculos-recomendados{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div.bloco-secundario{
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    /*efeito*/
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+div.bloco-secundario .titulo-bloco{
+    font-size: 25px;
+}
+
+div.bloco-secundario .entrada-de-valores{
+    font-size: 18px;   
+}
+
+div.bloco-secundario .texto-explicativo p{
+    font-size: 18px;
+}
+
+div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
+    margin: auto;
+}
+
+/*FOOTER*/
+
+div.objects-container{
+    background-color: whitesmoke;
+    border-top: solid 1px #c0c0c0;
+    margin-top: 50px;
+    display: flex;
+    height: 100px;
+}
+
+div.social-networks-container{
+    border-right: 1px dashed silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+div.call-me{
+    margin: auto;
+    margin-bottom: 0;
+    font-family: 'Krona One', sans-serif;
+}
+
+div.social-networks{
+    width: 230px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+div.social-networks img{
+    width: 30px;
+}
+
+div.description-container{
+    text-align: center;
+    margin: auto;
+}
+
+div.description{
+    font-family: 'Krona One', sans-serif;
+}
+
+div.assinatura{
+    font-family: 'WindSong', cursive;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+div.copyright{
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+    border-top: 1px solid;
+}    

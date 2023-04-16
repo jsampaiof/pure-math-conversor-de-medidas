@@ -18,28 +18,27 @@
         </section>
     </header>
     <main>
-        <section class="section-1-container">
-            <div class="bloco-principal">
+        <section class="container-1">
+            <div class="main-block">
                 <div class="bloco-metro-para-km">
-                    <div class="titulo-bloco">
+                    <div class="block-title">
                         <h1><%= getType.division[0].name %></h1>
                     </div>
-                    <hr>
-                    <div class="formulario">
-                        <form class="entrada-de-valores">
-                            <label for="valores">Quanto você quer calcular?</label>
-                            <input class="valores" type="text" name="metros" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
+                    <div class="value-entry">
+                        <form>
+                            <p>Quanto você quer calcular?</p>
+                            <input class="value" type="text" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
                         </form>
                     </div>
-                    <div class="botão-calcular">
+                    <div class="calculation-button">
                         <input class="division <%= getType.division[0].value %>" type="button" value="Calcular">
                     </div>
-                    <div class="calculo">
-                        <div class="texto-explicativo">
-                            <p><span class="valor-aplicado">0</span> metros é igual a:</p>
+                    <div class="calculation">
+                        <div class="description">
+                            <p><span class="applied-value">0</span> metros é igual a:</p>
                         </div>
-                        <div class="resultado">
-                            <p><span class="valor-convertido">0</span> Km</p>
+                        <div class="result">
+                            <p><span class="converted-value">0</span> Km</p>
                         </div>
                     </div>
                 </div>

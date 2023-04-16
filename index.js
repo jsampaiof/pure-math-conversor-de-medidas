@@ -3,7 +3,7 @@ import { StatusCodes } from 'http-status-codes';
 import * as type from './public/Scripts/CalculationType.js'
 
 const app = Express();
-const PORT = process.env.PORT || 220;
+const PORT = process.env.PORT || 1220;
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
