@@ -10,6 +10,8 @@
 :root{
     --first-color: #D4B39E;
     --second-color: #c0c0c0;
+    --primary-font: 'Krona One', sans-serif;
+    --secondary-font : 'WindSong', cursive;
 }
 
 ::selection{
@@ -134,28 +136,28 @@ div.result p{
 
 /*MAIN - SECTION 2*/
 
-section.section-2-container{
+section.container-2{
     margin: 20px;
     text-align: center;
 }
 
-div.titulo-section-2{
+div.title-container-2{
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-div.titulo h1{
+div.title h1{
     font-size: 40px;
     font-family: 'Krona One', sans-serif;
 }
 
-div.calculos-recomendados{
+div.recommended-calculations{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-div.bloco-secundario{
+div.second-block{
     border-radius: 30px;
     width: 400px;
     height: 400px;
@@ -169,25 +171,25 @@ div.bloco-secundario{
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-div.bloco-secundario .titulo-bloco{
+div.second-block .block-title{
     font-size: 25px;
 }
 
-div.bloco-secundario .entrada-de-valores{
+div.second-block .value-entry{
     font-size: 18px;   
 }
 
-div.bloco-secundario .texto-explicativo p{
+div.second-block .description p{
     font-size: 18px;
 }
 
-div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
+/* div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
     margin: auto;
-}
+} */
 
 /*FOOTER*/
 
-div.objects-container{
+footer.footer-container{
     background-color: whitesmoke;
     border-top: solid 1px #c0c0c0;
     margin-top: 50px;
@@ -195,20 +197,21 @@ div.objects-container{
     height: 100px;
 }
 
-div.social-networks-container{
+section.social-networks-container{
     border-right: 1px dashed silver;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
 }
+
 div.call-me{
     margin: auto;
     margin-bottom: 0;
     font-family: 'Krona One', sans-serif;
 }
 
-div.social-networks{
+div.social-icons{
     width: 230px;
     width: 200px;
     display: flex;
@@ -216,11 +219,11 @@ div.social-networks{
     margin: auto;
 }
 
-div.social-networks img{
+div.social-icons img{
     width: 30px;
 }
 
-div.description-container{
+section.description-container{
     text-align: center;
     margin: auto;
 }
@@ -229,7 +232,7 @@ div.description{
     font-family: 'Krona One', sans-serif;
 }
 
-div.assinatura{
+div.signature{
     font-family: 'WindSong', cursive;
     font-size: 25px;
     margin-bottom: 5px;
