@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- <link rel="stylesheet" href="CSS/responsive.css"> -->
     <link rel="shortcut icon" href="Images/favicon.webp" type="image/x-icon">
     <script type="module" src="Scripts/main.js" defer></script>
     <title><%= title %></title>
@@ -21,26 +21,24 @@
     <main>
         <section class="container-1">
             <div class="main-block">
-                <div class="bloco-metro-para-km">
-                    <div class="block-title">
-                        <h1><%= getType.division[0].name %></h1>
+                <div class="block-title">
+                    <h1><%= getType.division[0].name %></h1>
+                </div>
+                <div class="value-entry">
+                    <form>
+                        <p>Quanto você quer calcular?</p>
+                        <input class="value" type="text" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
+                    </form>
+                </div>
+                <div class="calculation-button">
+                    <input class="division <%= getType.division[0].value %>" type="button" value="Calcular">
+                </div>
+                <div class="calculation">
+                    <div class="description">
+                        <p><span class="applied-value">0</span> metros é igual a:</p>
                     </div>
-                    <div class="value-entry">
-                        <form>
-                            <p>Quanto você quer calcular?</p>
-                            <input class="value" type="text" placeholder="valor em <%= getType.division[0].name.split(" ")[0] %>">
-                        </form>
-                    </div>
-                    <div class="calculation-button">
-                        <input class="division <%= getType.division[0].value %>" type="button" value="Calcular">
-                    </div>
-                    <div class="calculation">
-                        <div class="description">
-                            <p><span class="applied-value">0</span> metros é igual a:</p>
-                        </div>
-                        <div class="result">
-                            <p><span class="converted-value">0</span> Km</p>
-                        </div>
+                    <div class="result">
+                        <p><span class="converted-value">0</span> Km</p>
                     </div>
                 </div>
             </div>            
