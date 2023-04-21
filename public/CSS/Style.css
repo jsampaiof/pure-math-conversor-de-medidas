@@ -29,7 +29,7 @@ body{
 /*HEADER*/
 
 .logo-container{
-    background-color: #f5f5f5;
+    background-color: var(--third-color);
     border-bottom: solid 1px var(--second-color);
 }
 
@@ -39,24 +39,24 @@ body{
 }
 
 .logo-image img{
-    width: 120px;
+    width: 12%;
 }
 
 /*MAIN - SECTION 1*/
 
 .container-1{
+    height: 768px;
+    display: flex;
+    align-items: center;
+    /* DESIGN */
     background-image: url('../Images/01.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 768px;
-    display: flex;
-    align-items: center;
 }
 
 .main-block{
-    border-radius: 30px;
     width: 40%;
     height: 60%;
     display: flex;
@@ -66,6 +66,7 @@ body{
     justify-content: center;
     margin: auto;
     /* DESIGN*/
+    border-radius: 30px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 11px );
@@ -74,26 +75,29 @@ body{
 }
 
 .block-title{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    /* DESIGN */
     font-size: var(--primary-font-size);
     font-family: var(--primary-font);
-    margin-bottom: 15px;
     border-bottom: 1px solid #000000;
-    padding-bottom: 15px;
 }
 
 .value-entry form{
     display: flex;
     flex-direction: column;
+    /* DESIGN */
     font-size: var(--secondary-font-size);
     font-family: var(--primary-font);
 }
 
 .value{
-    border-radius: 25px;
     width: 40%;
     height: 30px;
     margin: auto;
     margin-top: 15px;
+    /* DESIGN */
+    border-radius: 25px;
 }
 
 .value::-webkit-input-placeholder{
@@ -107,6 +111,7 @@ body{
     height: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
+    /* DESIGN */
     border-radius: 25px;
     background-color: var(--first-color);
     font-size: var(--third-font-size);
@@ -120,16 +125,17 @@ body{
 }
 
 .result{
-    border: 2px solid #000000;
-    border-radius: 25px;
     width: 40%;
     height: 30px;
     margin: auto;
     margin-top: 15px;
-    background-color: var(--first-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    /* DESIGN */
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background-color: var(--first-color);
     font-size: var(--third-font-size);
     font-family: var(--primary-font);
 }
@@ -138,6 +144,7 @@ body{
 
 .container-2{
     margin: 20px;
+    /* DESIGN */
     text-align: center;
     font-size: 13px;
 }
@@ -145,6 +152,7 @@ body{
 .title-container-2{
     margin-top: 50px;
     margin-bottom: 50px;
+    /* DESIGN */
     font-size: var(--primary-font-size);
     font-family: var(--primary-font);
 }
@@ -156,7 +164,6 @@ body{
 }
 
 .second-block{
-    border-radius: 30px;
     width: 30%;
     padding: 30px;
     display: flex;
@@ -164,6 +171,7 @@ body{
     justify-content: center;
     margin: 15px;
     /*DESIGN*/
+    border-radius: 30px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -172,19 +180,20 @@ body{
 /*FOOTER*/
 
 .footer-container{
-    background-color: var(--third-color);
-    border-top: solid 1px var(--second-color);
     margin-top: 50px;
     display: flex;
-    /* height: 100px; */
+    /* DESIGN */
+    background-color: var(--third-color);
+    border-top: solid 1px var(--second-color);
 }
 
 .social-networks-container{
-    border-right: 1px dashed var(--second-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25%;
+    /* DESIGN */
+    border-right: 1px dashed var(--second-color);
     font-family: var(--primary-font);
 }
 
@@ -200,28 +209,35 @@ body{
     margin: auto;
 }
 
-div.social-icons img{
+.social-icons img{
     width: 60%;
 }
 
-section.description-container{
-    text-align: center;
+.description-container{
     margin: auto;
-}
-
-div.description{
-    font-family: 'Krona One', sans-serif;
-}
-
-div.signature{
-    font-family: 'WindSong', cursive;
-    font-size: 25px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-div.copyright{
-    font-family: 'Krona One', sans-serif;
+    /* DESIGN */
+    text-align: center;
+    font-family: var(--primary-font);
     font-size: 10px;
+}
+
+.description-footer{
+    margin-top: 10px;
+    font-size: var(--primary-font-size);
+}
+
+.signature{
+    margin-top: 5px;
+    /* DESIGN */
+    font-family: var(--secondary-font);
+    font-size: var(--primary-font-size);
+}
+
+.copyright{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    /* DESIGN */
+    font-size: var(--third-font-size);
+    font-style: italic;
     border-top: 1px solid;
 }
