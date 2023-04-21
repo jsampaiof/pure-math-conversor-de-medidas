@@ -10,6 +10,7 @@
 :root{
     --first-color: #D4B39E;
     --second-color: #c0c0c0;
+    --third-color: #f5f5f5;
     --primary-font: 'Krona One', sans-serif;
     --secondary-font : 'WindSong', cursive;
     --primary-font-size: 2.5em;
@@ -133,93 +134,74 @@ body{
     font-family: var(--primary-font);
 }
 
-/*MAIN - SECTION 2*/
+/*MAIN - CONTAINER 2*/
 
-section.container-2{
+.container-2{
     margin: 20px;
     text-align: center;
+    font-size: 13px;
 }
 
-div.title-container-2{
+.title-container-2{
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: var(--primary-font-size);
+    font-family: var(--primary-font);
 }
 
-div.title h1{
-    font-size: 40px;
-    font-family: 'Krona One', sans-serif;
-}
-
-div.recommended-calculations{
+.recommended-calculations{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-div.second-block{
+.second-block{
     border-radius: 30px;
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    padding: 30px;
     display: flex;
     align-items: center;
-    text-align: center;
-    margin: 10px;
-    /*efeito*/
+    justify-content: center;
+    margin: 15px;
+    /*DESIGN*/
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-div.second-block .block-title{
-    font-size: 25px;
-}
-
-div.second-block .value-entry{
-    font-size: 18px;   
-}
-
-div.second-block .description p{
-    font-size: 18px;
-}
-
-/* div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
-    margin: auto;
-} */
-
 /*FOOTER*/
 
-footer.footer-container{
-    background-color: whitesmoke;
-    border-top: solid 1px #c0c0c0;
+.footer-container{
+    background-color: var(--third-color);
+    border-top: solid 1px var(--second-color);
     margin-top: 50px;
     display: flex;
-    height: 100px;
+    /* height: 100px; */
 }
 
-section.social-networks-container{
-    border-right: 1px dashed silver;
+.social-networks-container{
+    border-right: 1px dashed var(--second-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 25%;
+    font-family: var(--primary-font);
 }
 
-div.call-me{
+.call-me{
     margin: auto;
-    margin-bottom: 0;
-    font-family: 'Krona One', sans-serif;
 }
 
-div.social-icons{
-    width: 230px;
-    width: 200px;
+.social-icons{
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     margin: auto;
 }
 
 div.social-icons img{
-    width: 30px;
+    width: 60%;
 }
 
 section.description-container{
@@ -242,4 +224,4 @@ div.copyright{
     font-family: 'Krona One', sans-serif;
     font-size: 10px;
     border-top: 1px solid;
-}    
+}
