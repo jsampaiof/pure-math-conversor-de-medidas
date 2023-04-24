@@ -195,10 +195,12 @@ body{
     /* DESIGN */
     border-right: 1px dashed var(--second-color);
     font-family: var(--primary-font);
+    font-size: 8px;
 }
 
 .call-me{
     margin: auto;
+    font-size: var(--primary-font-size);
 }
 
 .social-icons{
@@ -218,7 +220,7 @@ body{
     /* DESIGN */
     text-align: center;
     font-family: var(--primary-font);
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .description-footer{

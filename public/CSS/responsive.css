@@ -33,115 +33,32 @@
 
     /*MAIN - SECTION 2*/
 
-    section.section-2-container{
-        margin: 20px;
-        text-align: center;
-    }
-
-    div.titulo-section-2{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    div.titulo h1{
-        font-size: 25px;
-        font-family: 'Krona One', sans-serif;
-    }
-
-    div.calculos-recomendados{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    div.bloco-secundario{
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 20px;
-        /*efeito*/
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    div.bloco-secundario .titulo-bloco{
-        font-size: 15px;
-    }
-
-    div.bloco-secundario .entrada-de-valores{
-        font-size: 13px;   
-    }
-
-    div.bloco-secundario .texto-explicativo p{
-        font-size: 13px;
-    }
-
-    div.bloco-km-para-metros, div.bloco-cm-para-metros, div.bloco-m-para-centimetro{
-        margin: auto;
+    .second-block{
+        width: 95%;
     }
 
     /*FOOTER*/
 
-    div.objects-container{
-        background-color: whitesmoke;
-        border-top: solid 1px silver;
-        margin-top: 50px;
+    .footer-container{
         display: flex;
         flex-direction: column;
     }
 
-    div.social-networks-container{
-        border-bottom: 2px dashed silver;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .social-networks-container{
         padding: 10px;
-    }
-    div.call-me{
-        margin: auto;
-        margin-bottom: 15px;
-        font-family: 'Krona One', sans-serif;
+        width: 100%;
+        border-bottom: 1px dashed var(--second-color);
+        border-right: unset;
     }
 
-    div.social-networks{
-        width: 260px;
-        width: 220px;
-        display: flex;
-        justify-content: space-between;
+    .call-me{
+        margin-bottom: 10px;
     }
 
-    div.social-networks img{
-        width: 35px;
+    .description-container{
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
-    div.description-container{
-        text-align: center;
-        margin: auto;
-        padding: 10px;
-    }
-
-    div.description{
-        font-family: 'Krona One', sans-serif;
-        /* font-size: 15px; */
-    }
-
-    div.assinatura{
-        font-family: 'WindSong', cursive;
-        font-size: 27px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-
-    div.copyright{
-        font-family: 'Krona One', sans-serif;
-        font-size: 13px;
-        border-top: 1px solid;
-    }  
 }
 
 @media (min-width: 500px) and (max-width: 799px){
