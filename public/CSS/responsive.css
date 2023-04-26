@@ -1,4 +1,5 @@
 @media (min-width: 300px) and (max-width: 500px){
+    
     /*HEADER*/
 
     .logo-image img{
@@ -61,6 +62,7 @@
 }
 
 @media (min-width: 501px) and (max-width: 800px){
+    
     /*HEADER*/
 
     .logo-image img{
@@ -123,5 +125,272 @@
     .description-container{
         margin-left: 30px;
         margin-right: 30px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    
+    /*HEADER*/
+
+    .logo-image img{
+        width: 15%;
+    }
+
+    /*MAIN - SECTION 1*/
+
+    .container-1{
+        background-image: url('../Images/02.webp');
+    }
+
+    .main-block{
+        width: 55%;
+        height: unset;
+        display: flex;
+    }
+
+    .value{
+        width: 55%;
+    }
+
+    .calculation-button input{
+        width: 45%;
+    }
+
+    .result{
+        width: 45%;
+    }
+
+    /*MAIN - SECTION 2*/
+
+    .second-block{
+        width: 55%;
+    }
+
+    /*FOOTER*/
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .social-networks-container{
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px dashed var(--second-color);
+        border-right: unset;
+    }
+
+    .call-me{
+        margin-bottom: 10px;
+    }
+
+    .social-icons{
+        width: 50%;
+    }
+
+    .description-container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px){
+    
+    /*MAIN - SECTION 1*/
+
+    .value{
+        width: 55%;
+    }
+
+    .calculation-button input{
+        width: 45%;
+    }
+
+    .result{
+        width: 45%;
+    }
+
+    /*MAIN - SECTION 2*/
+
+    .second-block{
+        width: 40%;
+    }
+
+    /*FOOTER*/
+
+    .footer-container{
+        font-size: 18px;
+    }
+
+    .social-networks-container{
+        padding: 10px;
+    }
+
+    .call-me{
+        margin-bottom: 10px;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px){
+    
+    /*MAIN - SECTION 1*/
+
+    .container-1{
+        font-size: 20px;
+    }
+
+    .value{
+        width: 55%;
+        height: 35px;
+    }
+
+    .calculation-button input{
+        width: 45%;
+    }
+
+    .result{
+        width: 45%;
+    }
+
+    /*MAIN - SECTION 2*/
+
+    .container-2{
+        font-size: 17px;
+    }
+
+    .second-block{
+        width: 30%;
+
+    }
+
+    /*FOOTER*/
+
+    .social-networks-container{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .call-me{
+        margin-bottom: 10px;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+    .description-container{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px){
+    
+    /*MAIN - SECTION 1*/
+
+    .logo-image img{
+        width: 10%;
+    }
+
+    .container-1{
+        font-size: 23px;
+    }
+
+    .value{
+        width: 45%;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .calculation-button input{
+        width: 35%;
+        height: 40px;
+    }
+
+    .result{
+        width: 35%;
+        height: 40px;
+    }
+
+    /*MAIN - SECTION 2*/
+
+    .container-2{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+
+    .social-networks-container{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .call-me{
+        margin-bottom: 10px;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+    .description-container{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 2501px){
+    
+    /*MAIN - SECTION 1*/
+
+    .logo-image img{
+        width: 10%;
+    }
+
+    .container-1{
+        font-size: 30px;
+    }
+
+    .main-block{
+        height: 75%;
+    }
+
+    .value{
+        width: 45%;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    .calculation-button input, .result{
+        width: 35%;
+        height: 45px;
+    }
+
+    /*MAIN - SECTION 2*/
+
+    .container-2{
+        font-size: 24px;
+    }
+
+    /*FOOTER*/
+
+    .social-networks-container{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .call-me{
+        margin-bottom: 10px;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+    .description-container{
+        font-size: 13px;
     }
 }

@@ -211,6 +211,11 @@ body{
     margin: auto;
 }
 
+.social-icons a{
+    display:flex;
+    justify-content: center;
+}
+
 .social-icons img{
     width: 60%;
 }
