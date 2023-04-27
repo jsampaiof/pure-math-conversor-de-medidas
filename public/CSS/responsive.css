@@ -138,10 +138,6 @@
 
     /*MAIN - SECTION 1*/
 
-    .container-1{
-        background-image: url('../Images/02.webp');
-    }
-
     .main-block{
         width: 55%;
         height: unset;

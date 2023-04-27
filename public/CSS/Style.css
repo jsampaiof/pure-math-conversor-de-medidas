@@ -100,7 +100,7 @@ body{
     border-radius: 25px;
 }
 
-.value::-webkit-input-placeholder{
+.value::placeholder{
     font-size: var(--third-font-size);
     text-align: center;
     font-family: var(--primary-font);

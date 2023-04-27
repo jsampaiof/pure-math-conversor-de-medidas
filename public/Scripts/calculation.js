@@ -1,22 +1,22 @@
 'use strict';
 
-export class calculos {
-    #valor;
+export class calculate {
+    #inputValue;
     #numb;
-    constructor(valor, numb){
-        this.#valor = valor;
+    constructor(inputValue, numb){
+        this.#inputValue = inputValue;
         this.#numb = numb;
     };
 
-    division(valorAplicado, valorConvertido){
-        const calculo = this.#valor/this.#numb;
-        valorAplicado.textContent = this.#valor;
-        valorConvertido.textContent = calculo;
+    division(appliedValue, convertedValue){
+        const calculation = this.#inputValue/this.#numb;
+        appliedValue.textContent = this.#inputValue;
+        convertedValue.textContent = calculation;
     };
     
-    multiplication(valorAplicado, valorConvertido){
-        const calculo = this.#valor*this.#numb;
-        valorAplicado.textContent = this.#valor;
-        valorConvertido.textContent = calculo;
+    multiplication(appliedValue, convertedValue){
+        const calculation = this.#inputValue*this.#numb;
+        appliedValue.textContent = this.#inputValue;
+        convertedValue.textContent = calculation;
     };
 };
